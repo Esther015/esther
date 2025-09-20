@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+
+ printf("$ ");
+
+ char input[100];
+ fgets(input, 100, stdin);
+ input[strlen(input) - 1] = '\0';
+
+ printf("%s: commande not found\n", input);
+
+ return 0;
+}
